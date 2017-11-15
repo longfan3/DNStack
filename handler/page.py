@@ -18,3 +18,7 @@ class Page500Handler(BaseHandler):
 class PageErrorHandler(BaseHandler):
     def get(self):
         self.render('page/error.html')
+
+class BlankHandler(BaseHandler):
+    def get(self):
+        self.render('page/blank.html')
